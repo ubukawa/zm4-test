@@ -1,0 +1,144 @@
+{
+  host: localhost
+  unixUser: test\taro.ubukawa
+  wtpsThreshold: 50
+  monitorPeriod: 10
+  Z: 4
+  concurrent: 1
+  concurrentE: 1
+  maxRetries: 5
+  retryDelay: 5000
+  port: 5433
+  dbUser: postgress
+  dbPassword: ABCDEFG
+  skipSea: yes
+  relations: [
+sde_pg_3::vectortile::ferries_all_l              
+sde_pg_3::vectortile::landuse_naturallarge_a     
+sde_pg_3::vectortile::landuse_naturalmedium_a    
+sde_pg_3::vectortile::landuse_other_p            
+sde_pg_3::vectortile::landuse_parkreserve_a      
+sde_pg_3::vectortile::landuse_urban_a            
+sde_pg_3::vectortile::places_all_a               
+sde_pg_3::vectortile::places_all_p               
+sde_pg_3::vectortile::pois_heritage_ap           
+sde_pg_3::vectortile::pois_heritage_p            
+sde_pg_3::vectortile::pois_other_ap              
+sde_pg_3::vectortile::pois_other_p               
+sde_pg_3::vectortile::pois_public_ap             
+sde_pg_3::vectortile::pois_public_p              
+sde_pg_3::vectortile::pois_services_ap           
+sde_pg_3::vectortile::pois_services_p            
+sde_pg_3::vectortile::pois_traffic_p             
+sde_pg_3::vectortile::pois_transport_a           
+sde_pg_3::vectortile::pois_transport_ap          
+sde_pg_3::vectortile::pois_transport_p           
+sde_pg_3::vectortile::pois_water_p               
+sde_pg_3::vectortile::pois_worship_ap            
+sde_pg_3::vectortile::pois_worship_p             
+sde_pg_3::vectortile::railways_all_l             
+sde_pg_3::vectortile::roads_all_a
+sde_pg_3::vectortile::roads_special_l                
+sde_pg_3::vectortile::roads_major_l              
+sde_pg_3::vectortile::roads_medium_l    
+sde_pg_3::vectortile::roads_minor_l              
+sde_pg_3::vectortile::roads_other_l              
+sde_pg_3::vectortile::runways_all_l              
+sde_pg_3::vectortile::water_all_a                
+sde_pg_3::vectortile::waterways_large_l          
+sde_pg_3::vectortile::waterways_small_l
+sde_pg_3::vectortile::buildings_a          
+  ]
+  defaultDate: 2021-01-20
+  logDir: log
+  mbtilesDir: mbtiles/osm_tile
+  mbtilesDir_every: mbtiles/osm_tile_every
+  mbtilesDir_day01: mbtiles/osm_tile_day01
+  mbtilesDir_day02: mbtiles/osm_tile_day02
+  mbtilesDir_day03: mbtiles/osm_tile_day03
+  mbtilesDir_day04: mbtiles/osm_tile_day04
+  propertyBlacklist: [
+    description
+    fid
+    fid_1
+    globalid
+    id
+    objectid_1
+    osm_id
+    pseudoarea
+  ]
+  spinnerString: 18
+  fetchSize: 300
+  tippecanoePath: /usr/local/bin/tippecanoe
+  everydayTilelist: [
+6-18-30
+6-18-31
+  ]
+  day01Tilelist: [
+4-1-13
+4-1-14
+4-1-15
+4-2-13
+4-2-14
+4-2-15
+4-3-13
+4-3-14
+4-3-15
+4-4-13
+4-4-14
+4-4-15
+4-5-13
+4-5-14
+4-5-15
+4-6-13
+4-6-14
+4-6-15
+  ]
+  day02Tilelist: [
+4-0-7
+4-0-8
+4-0-9
+4-0-10
+4-0-11
+4-0-12
+4-1-7
+4-1-8
+4-1-9
+4-1-10
+4-1-11
+4-1-12
+4-2-7
+4-2-8
+4-2-9
+4-2-10
+4-2-11
+4-2-12
+4-3-8
+4-3-9
+4-3-10
+4-3-11
+4-3-12
+  ]
+  day03Tilelist: [
+3-0-4
+3-0-5
+3-0-6
+3-0-7
+3-1-4
+3-1-5
+3-1-6
+3-1-7
+3-2-6
+3-2-7
+  ]
+  day04Tilelist: [
+2-0-2
+2-0-3
+2-1-3
+2-2-3
+  ]
+seaTilelist: [
+6-0-0
+6-63-59
+  ]
+}
